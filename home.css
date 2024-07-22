@@ -1,0 +1,533 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container {
+    height: auto;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+
+.navbar {
+    background-image: url(images/nav-footer-bg-img.jpg);
+   
+    height: 120px;
+    /* margin: 20px; */
+    width: 100%;
+    background-color: rgb(221, 217, 217);
+    display: flex;
+    align-items: center;
+    /* border: 1px solid rgb(24, 23, 23); */
+    position: absolute;
+    top: 0;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.nav {
+    margin-left: 200px;
+    margin-right: 20px;
+    
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    column-gap: 50px;
+   
+}
+
+.nav ul li {
+    position: relative;
+   
+}
+
+
+
+
+.nav ul li a {
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav ul li a:hover {
+    color: orangered;
+}
+
+.nav ul li a .fa-solid {
+    margin-left: 4px;
+    transition: transform 0.5s ease;
+}
+
+.nav ul li:hover > a .fa-solid {
+    transform: rotate(180deg);
+}
+
+.nav ul li .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    text-align: center;
+    background-image: url(images/navbar\ bg.jpeg);
+    background-color: rgb(235, 218, 218);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    padding: 10px;
+    width: 150px;
+    
+}
+
+.nav ul li:hover .sub-menu {
+    display: block;
+    animation: fadeInUp 0. ease-in-out;
+}
+
+
+
+.sub-menu li {
+    margin-top: 10px;
+    border-bottom: rgb(247, 242, 242) 0.5px solid;
+}
+
+.sub-menu li a {
+    color: black;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.sub-menu li a:hover {
+    color: orangered;
+}
+
+.nav ul li input[type="text"] {
+    padding: 7px;
+    position: absolute;
+    border-radius: 10px;
+    border: none;
+}
+
+
+.footer{
+    background-image: url(images/navbar\ bg.jpeg);
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    width: 100%;
+    border: black solid 1px;
+    margin-top: 150px;
+    padding-left: 50px;
+    display:flex;
+    column-gap: 250px;
+    padding-top: 50px;
+    color: white;
+   
+
+}
+.footer li{
+    list-style: none;
+    margin-top: 22px;
+    font-size: 22px;
+}
+.footer li a{
+    text-decoration: none;
+    color:white;
+    
+}
+.footer li a:hover{
+    color: orangered;
+}
+.icons i{
+    margin-top: 10px;
+padding: 5px;
+    
+}
+
+
+.home{
+    height:650px;
+    width: 100%;
+    color: white;
+    background-image: url(images/home-background.avif);
+    background-size: cover;
+    margin-bottom: 100px;
+    cursor: pointer;
+    /* font-size: 20px; */
+    margin-top: 120px;
+   
+   
+}
+.zoom-image:hover{
+    transform: scale(1.1);
+}
+.page{
+    float: left;
+    height: 400px;
+    /* width: 50%; */
+    text-align: center;
+    padding-top: 300px;
+}
+.page1{
+    height: 500px;
+    width: 50%;
+    text-align: center;
+    float: left;
+    padding-top: 200px;
+    padding-left: 20px;
+}
+.page1 img{
+    border-radius: 50%;
+}
+.btn-about button{
+    height: 50px;
+    width: 250px;
+    background-color:black;
+    cursor: pointer;
+    border-color: white;
+    border-radius: 6px;
+    color:white;
+    transition: all 0.5s ease;
+}
+.btn-about button:hover{
+    background-color: white;
+    transform: scale(1.1);
+   
+}
+.btn-about button a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    
+    transition: all 0.5s ease;
+   
+}
+.btn-about button a:hover{
+    color: black;
+    
+    transform: scale(1.1);
+
+}
+
+.home1{
+    height: 1200px;
+    width: 100%;
+  
+}
+.home1 .page2{
+    float: left;
+    margin: 25px;
+    height: 650px;
+    width: 600px;
+    text-align: center;
+}
+.home1 .page3{
+    margin: 25px;
+    float: left;
+    height: 650px;
+    width: 600px;
+    text-align: center;
+}
+.home1 .page3 img{
+    margin-bottom: 30px;
+     height: 400px;
+     width: 500px;
+}
+.home1 .page4{
+    background-image: url(images/g2.jpg);
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding-top: 150px;
+    margin-bottom: 100px;
+}
+.home1 .page4 img{
+    margin-bottom: 30px;
+     height: 400px;
+     width: 500px;
+    
+}
+.home1 .page2 button{
+    padding: 10px ;
+    border-radius: 10px;
+    background-color: black;
+    width: 100px;
+    margin-top: 30px;
+}
+.home1 a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.home1 .page3 button{
+    padding: 10px ;
+    border-radius: 10px;
+    background-color: black;
+    width: 100px;
+   
+}
+.home1 .page4{
+    margin-top: 100px;
+}
+.home1 .page4 button{
+    padding: 10px ;
+    border-radius: 10px;
+    /* background-color: blueviolet; */
+    background-color: black;
+    width: 100px;
+    height: 40px;
+}
+.home1 .page4 h1{
+    color: rgba(24, 23, 22, 0.808);
+    margin-top: 20px;
+    font-size: 50px;
+}
+.home1 .page4 p{
+    color: black;
+    margin-top: 20px;
+}
+.home1 h2{
+    font-size: 50px;
+}
+.home1 p{
+    font-size: 23px;
+}
+
+.trending{
+    height: 1100px;
+    width: 100%;
+    
+    margin-top: 50px;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    justify-content: center;
+    color: black;
+}
+.trending1{
+    height: 600px;
+    width: 790px;
+    padding-top: 20px;
+    border: 1px gray solid;
+}
+.trending h5{
+    padding-left: 10px;
+    margin-top: 10px;
+}
+.trending a{
+    color: black;
+    font-weight: 600;
+    padding-left: 10px;
+
+}
+.trending2{
+    height: 600px;
+    width: 490px;
+    border: gray 0.5px solid;
+
+    padding-top: 20px;
+
+}.trending3, .trending4, .trending5{
+    height: 400px;
+    width: 420px;
+    border: gray 0.5px solid;
+
+    padding-top: 20px;
+    }
+    #one {
+        color: white;
+        text-decoration: none;
+        border: 1px solid;
+        padding: 5px 10px;
+        background-color: black;
+     }
+     .news{
+        height: 130px;
+        width: 100%;
+        padding-left: 20px;
+        padding-top: 10px;
+        }
+       
+     .newsA{
+        height: 800px;
+        width: 100%;
+        border: 1px solid;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 20px;
+     }
+     .news1, .news2, .news3, .news4{
+        height: 350px;
+        width:620px;
+        border: 1px solid;
+     }
+     .button{
+        margin-top: 100px;
+        margin-left: 630px;
+     }
+     .button button{
+        height: 50px;
+        width: 150px;
+        background-color:black;
+        cursor: pointer;
+        border-radius: 10px;
+     }
+     .button button:hover{
+        height: 50px;
+        width: 150px;
+        background-color: whitesmoke;
+        cursor: pointer;
+        border-radius: 10px;
+     }
+     .button button a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+     }
+     .button button a:hover{
+        color: black;
+     }
+
+     .reviews{
+        height: 800px;
+        width: 100%;
+        margin-top: 100px;
+        text-align: center;
+     }
+     .reviews a{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+     }
+   
+     .reviews .rev{
+        float: left;
+        margin: 10px;
+        background-image: url(images/pic4.jpeg);
+        background-size: 100%;
+        border-radius: 50%;
+        height: 400px;
+        width: 400px;
+        margin-top: 70px;
+        
+     }
+     .reviews .rev1{
+        float: left;
+        margin: 10px;
+        background-image: url(images/pic5.jpeg);
+        background-size: 100%;
+        border-radius: 50%;
+        height: 400px;
+        width: 400px;
+        margin-top: 70px;
+     }
+     .reviews .rev2{
+        background-image: url(images/pic6.jpeg);
+        background-size: 100%;
+        height: 400px;
+        width: 400px;
+        float: left;
+        margin: 10px;
+        border-radius: 50%;
+        margin-top: 70px;
+     }
+     .reviews i{
+        color: orange;
+     }
+     .reviews button a{
+        text-decoration: none;
+     }
+     .reviews h1{
+        padding-top: 400px;
+     }
+
+
+     .tutorial{
+        height: 800px;
+        width: 100%;
+        border: 1px #6f3f37 solid;
+    }
+    .tutorial h1{
+        padding-top: 50px;
+        padding-left: 500px;
+    }
+    .tutorial button{
+        height: 50px;
+        width: 150px;
+        background-color: black;
+        margin-top: 190px;
+        margin-left: 600px;
+        cursor: pointer;
+        border-radius: 9px;
+    }
+    .tutorial button:hover{
+        height: 50px;
+        width: 150px;
+        background-color: peru;
+        margin-top: 190px;
+        margin-left: 600px;
+        cursor: pointer;
+        border-radius: 9px;
+    }
+    .tutorial button a{
+        color: white;
+        text-decoration: none;
+    }
+    .tutorial .page1{
+        height: 500px;
+        width: 600px;
+        float: left;
+        text-align: center;
+    }
+    .tutorial .page2{
+        height: 500px;
+        width: 600px;
+        float: left;
+        text-align: center;
+        padding-top: 190px;
+    }
+
+    
+    
+    
+    .icons i{
+        font-size: 30px;
+        margin-left: 20px;
+        margin-top: 20px;
+        transition: all 0.5s ease;
+    }
+    .icons i:hover{
+     font-size: 35px;   
+     color: gray;
+     transform: scale(1.1);
+    }
+
+
+
+
+

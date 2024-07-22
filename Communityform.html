@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Communityform.css  ">
+    <title>TechTrendLog</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="navbar">
+            <div class="logo">
+                <img src="/images/tech hub29.jpg" style="border-radius: 50%;" height="120px" width="150px">
+
+            </div>
+            <div class="nav">
+                <ul class="links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="aboutUs.html">About</a></li>
+                  <li><a href="Tech hub+.html">Trending <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="sub-menu">
+                    <li><a href="newsPage.html">News</a></li>
+                    <li><a href="Review.html">Reviews</a></li>
+                    <li><a href="tutorial.html">Tutorials</a></li>
+
+                </ul>
+            </li>
+            
+                    <li><a href="contactUs.html">Contact Us <i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="sub-menu" style="width: 250px;">
+                        <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+                        <li><a href="Communityform.html">Community Forum</a></li>
+                        <li><a href="termsConditions.html">Terms of Services</a></li>
+    
+                    </ul>
+                    </li>
+                      <li><a href="login form.html">Sign in</a></li>   
+                                  </ul>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="registration-container">
+            <h2>Register</h2>
+            <form id="registrationForm">
+                <div class="input-group">
+                    <input type="text" id="firstName" placeholder="First Name" >
+                </div>
+                <div class="input-group">
+                    <input type="text" id="lastName" placeholder="Last Name" >
+                </div>
+                <div class="input-group">
+                    <input type="text" id="userID" placeholder="User ID">
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="Email">
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" placeholder="Password" >
+                </div>
+                <div class="input-group">
+                    <input type="tel" id="phoneNumber" placeholder="Phone Number" >
+                </div>
+                <button type="submit">Register</button>
+                <div class="gos">
+                    <input  type="checkbox" checked="checkbox"> By creating an account,I agree to this website'
+                </div>
+            </form>
+            <p id="message"></p>
+        </div>
+
+    <div class="good">
+        <h2>I have all ready an account</h2>
+        <a href="login form.html" id="#"><button>Login</button></a>
+    </div>
+
+
+    <div class="footer">
+        <div class="footer1">
+            <img src="./images/logo.jpg" height="80px" width="180px"> <br><br>
+            <p style="font-size: 20px;">We are here to help you.</p>
+            <div class="icons">
+               <a><i class="fa-brands fa-facebook-f"></i></a>
+                <a><i class="fa-brands fa-square-instagram"></i></a>
+                <a><i class="fa-brands fa-linkedin"></i></a>
+                <a> <i class="fa-brands fa-x-twitter"></i></a>
+                
+            </div>
+        </div>
+        <div class="footer2">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="aboutUs.html">About</a></li>
+            <li><a href="newsPage.html">News</a></li>
+            <li><a href="Review.html">Reviews</a></li>
+            <li><a href="tutorial.html">Tutorials</a></li>
+           
+        </div>
+        <div class="footer3">
+            <li><a href="ProductComparision.html">Product Comparisions</a></li>
+            <li><a href="contactUs.html">Contact</a></li>
+            <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+            <li><a href="Communityform.html">Community Forum</a></li>
+            <li><a href="termsConditions.html">Terms of Services</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+    
+        </div>
+    </div>
+
+
+
+    </div>
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+     event.preventDefault();
+        
+        const firstName = document.getElementById('firstName').value;
+
+        const lastName = document.getElementById('lastName').value;
+
+        const userID = document.getElementById('userID').value;
+
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+
+        const phoneNumber = document.getElementById('phoneNumber').value;
+
+        const message = document.getElementById('message');
+        
+        if (firstName && lastName && userID && email && password && phoneNumber) {
+         message.style.color = 'green';
+            message.textContent = alert('Registration successful!');
+            
+        } else if(firstName=="" || lastName=="" || userID=="" || email=="" || password=="" || phoneNumber=="") {
+         message.style.color = 'red';
+            message.textContent = alert('Please fill in all fields.');
+        }
+       });
+    </script>  
+  </body>
+  </html>      
+

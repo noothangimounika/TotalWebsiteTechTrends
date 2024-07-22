@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>discussion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid black;
+    font-family: sans-serif;
+}
+
+
+.navbar {
+    background-image: url(/images/tec\ hub19.jpg);
+    height: 120px;
+    width: 100%;
+    background-color: rgb(221, 217, 217);
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(24, 23, 23);
+    position: absolute;
+    top: 0;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.nav {
+    margin-left: 200px;
+    margin-right: 20px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    column-gap: 50px;
+}
+
+.nav ul li {
+    position: relative;
+
+}
+
+
+
+
+.nav ul li a {
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav ul li a:hover {
+    color: orangered;
+}
+
+.nav ul li a .fa-solid {
+    margin-left: 4px;
+    transition: transform 0.5s ease;
+  
+}
+
+.nav ul li:hover > a .fa-solid {
+    transform: rotate(180deg);
+   
+
+}
+
+.nav ul li .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    text-align: center;
+    background-image: url(images/footer1.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    padding: 10px;
+    width: 150px;
+}
+
+.nav ul li:hover .sub-menu {
+    display: block;
+    animation: fadeInUp 0. ease-in-out;
+    background-color: rgb(22, 43, 77);
+
+   
+}
+
+
+
+.sub-menu li {
+    margin-top: 10px;
+    border-bottom: rgb(247, 242, 242) 0.5px solid;
+   
+}
+
+.sub-menu li a {
+    color: black;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.sub-menu li a:hover {
+    color: orangered;
+}
+
+.nav ul li input[type="text"] {
+    padding: 7px;
+    position: absolute;
+    border-radius: 10px;
+    border: none;
+}
+
+
+
+
+.content{
+    margin-top: 200px;
+    text-align: center;
+    color:rgb(40, 20, 59);
+    font-size:600;
+}
+.content1{
+    padding-top:20px;
+    text-align: center;
+  
+}
+.content1 img {
+    border-radius:50px;
+    transform: translateX(-70%);
+    animation: slideIn 2s forwards;
+    }
+        @keyframes slideIn{
+        to{
+        transform:translateX(0);
+          }
+    }
+
+
+.categories{
+    margin-top: 50px;
+    justify-content: center;
+   margin-left: auto;
+   margin-right: auto;
+   display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 20px;
+    row-gap: 50px;
+}
+.parent{
+    width: 18%;
+    height: 280px;
+    overflow:hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+.child{
+height: 100%;
+width: 100%;
+background-size: cover;
+background-position: center;
+transition: all 1s;
+}
+.bg-one{
+    background-image: url(/images/tech\ hub12.avif);
+}
+.bg-two{
+    background-image: url(/images/tech\ hub5.avif);
+}
+.bg-three{
+    background-image: url(/images/tech\ hub8.avif);
+}
+.bg-four{
+    background-image: url(/images/tech\ hub4.avif);
+}
+.bg-five{
+    background-image: url(/images/tech\ hub7.webp);
+}
+.bg-six{
+    background-image: url(/images/tech\ hub6.avif);
+}
+.bg-seven{
+    background-image: url(/images/photo-1484557052118-f32bd25b45b5.avif);
+}
+.bg-eight{
+    background-image: url(/images/tech\ hub9.webp);
+}
+.bg-nine{
+    background-image: url(/images/tech\ hub11.avif);
+}
+.bg-ten{
+    background-image: url(/images/tech\ hub13.webp);
+}
+.parent:hover .child{
+    transform:scale(1.2);
+}
+.images{
+    margin-top:50px;
+    background-color: rgb(222, 247, 184);
+    box-sizing:40px;
+    height:370px;
+    width:94%;
+    margin-left:40px;
+    border-radius:40px
+    
+}
+
+.images1{
+    display: flex;
+   
+}
+.images1 img{
+    margin-top:50px;
+    border-radius:20%;
+    margin-left:40px;
+    
+}
+.images1 img:hover{
+    transform:scale(1.3); 
+}
+.images2{
+    margin-left:50px;
+    font-size:25px;
+    padding-top:100px;
+    text-align: center;
+   color:rgb(40, 20, 59);
+}
+
+
+.cont{
+        display: flex;
+        justify-content: space-around;
+        margin-top:50px;
+        transform: translateX(30%);
+    animation: slideIn 2s forwards;
+    }
+        @keyframes slideIn{
+        to{
+        transform:translateX(0);
+          }
+    }
+       
+       .sup{
+        text-align: center;
+       border: 7px solid rgb(250, 71, 5);
+        border-radius:35px;
+        width: 400px;
+        height: 450px;
+
+       }
+       .cont .sup img{
+        padding-top:10px;
+       }
+       
+       .cont .sup h2{
+        padding-top:25px;
+       }
+
+       .sup1{
+        text-align: center;
+       border:7px solid rgb(39, 4, 134);
+        border-radius:35px;
+        width: 400px;
+        height: 450px;
+
+       }
+       .cont .sup1 img{
+        padding-top:10px;
+       }
+       .cont .sup1 h2{
+        padding-top:25px;
+       }
+       .sup2{
+        text-align: center;
+       border:7px solid rgb(253, 4, 178);
+        border-radius:35px;
+        width: 400px;
+        height: 450px;
+
+       }
+       .cont .sup2 img{
+        padding-top:10px;
+       }
+       .cont .sup2 h2{
+        padding-top:25px;
+       }
+       .cont1{
+        display: flex;
+        justify-content: space-around;
+        margin-top:50px;
+
+        transform: translateX(-50%);
+    animation: slideIn 2s forwards;
+    }
+        @keyframes slideIn{
+        to{
+        transform:translateX(0);
+          }
+    }
+       .sup3{
+        text-align: center;
+       border:7px solid rgb(6, 243, 26);
+        border-radius:35px;
+        width: 400px;
+        height: 450px;
+
+       }
+       .cont1 .sup3 img{
+        padding-top:10px;
+       }
+       .cont1 .sup3 h2{
+        padding-top:25px;
+       }
+
+       .sup4{
+        text-align: center;
+       border:7px solid rgb(255, 255, 0);
+        border-radius:35px;
+        width: 400px;
+        height: 450px;
+
+       }
+       .cont1 .sup4 img{
+        padding-top:10px;
+       }
+       .cont1 .sup4 h2{
+        padding-top:25px;
+       }
+    
+       .sup5{
+        text-align: center;
+       border:7px solid rgb(129, 6, 6);
+        border-radius:35px;
+        width: 400px;
+        height: 450px;
+
+       }
+       .cont1 .sup5 img{
+        padding-top:10px;
+       }
+       .cont1 .sup5 h2{
+        padding-top:25px;
+       }
+
+    
+
+ .loading {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+
+}
+.loader div {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: anime 8s ease-in-out infinite;
+    display: inline-block;
+    margin: 0.5rem;
+}
+.loader div:nth-child(1) {
+    animation-delay: 0.3s;
+    margin-left:10px;
+}
+.loader div:nth-child(2) {
+    animation-delay: 0.6s;
+      margin-left:120px;
+}
+.loader div:nth-child(3) {
+    animation-delay: 0.9s;
+    margin-left:120px;
+}
+.loader div:nth-child(4) {
+    animation-delay: 1.2;
+    margin-left:120px;
+}
+.loader div:nth-child(5) {
+    animation-delay: 1.5s;
+    margin-left:120px;
+}
+.loader div:nth-child(6) {
+    animation-delay: 1.8s;
+    margin-left:120px;
+}
+.loader div:nth-child(7) {
+    animation-delay: 2.1;
+    margin-left:120px;
+}
+@keyframes anime {
+    0%,100% {
+        transform: scale(3);
+        background-image: url("/images/photo-1484557052118-f32bd25b45b5.avif");
+        background-size: cover;
+    }
+    15%, 100%{
+        transform: scale(6);
+        background-image: url("/images/tech\ hub10.avif");
+        background-size: cover;
+    }
+    30%, 100% {
+        transform: scale(9);
+        background-image: url("/images/tech\ hub4.avif");
+        background-size: cover;
+    
+    }
+    45%, 100% {
+        transform: scale(12);
+        background-image: url("/images/tec\ hub15.jpg");
+        background-size: cover;
+    
+    }
+     
+    60%, 100% {
+        transform: scale(15);
+        background-image: url("/images/tech\ hub5.avif");
+        background-size: cover;
+    
+    }
+
+    70%, 100% {
+        transform: scale(18);
+        background-image: url("/images/tech\ hub8.avif");
+        background-size: cover;
+    
+    }
+
+    85%, 100%{
+        transform: scale(21);
+        background-image: url("/images/tech\ hub7.webp");
+        background-size: cover;
+    
+    }
+}
+
+.footer{
+    background-image: url(/images/tec\ hub19.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    width: 100%;
+    border: black solid 1px;
+    margin-top: 150px;
+    padding-left: 50px;
+    display:flex;
+    column-gap: 250px;
+    padding-top: 50px;
+    color: white;
+
+}
+.footer li{
+    list-style: none;
+    margin-top: 22px;
+    font-size: 22px;
+}
+.footer li a{
+    text-decoration: none;
+    color:white;
+    
+}
+.footer li a:hover{
+    color: orangered;
+}
+.icons i{
+    margin-top: 10px;
+padding: 5px;
+    
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="navbar">
+            <div class="logo">
+                <img src="/images/tech hub29.jpg" style="border-radius: 50%;" height="120px" width="150px">
+
+            </div>
+            <div class="nav">
+                <ul class="links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="aboutUs.html">About</a></li>
+                  <li><a href="Tech hub+.html">Trending <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="sub-menu">
+                    <li><a href="newsPage.html">News</a></li>
+                    <li><a href="Review.html">Reviews</a></li>
+                    <li><a href="tutorial.html">Tutorials</a></li>
+
+                </ul>
+            </li>
+            
+                    <li><a href="contactUs.html">Contact Us <i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="sub-menu" style="width: 250px;">
+                        <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+                        <li><a href="Communityform.html">Community Forum</a></li>
+                        <li><a href="termsConditions.html">Terms of Services</a></li>
+    
+                    </ul>
+                    </li>
+                      <li><a href="login form.html">Sign in</a></li>   
+                                  </ul>
+            </div>
+        </div>
+
+
+
+
+    <div class="content">
+                    <h1>Memory updated</h1>
+                    <h2> Discussion Boards on Tech Trend</h2><br>
+                    <p> Welcome to Tech Trend’s Discussion Boards! Our discussion boards are designed to foster a vibrant community where tech enthusiasts, professionals, and curious<br>
+                         minds can come together to share knowledge, ask questions, and discuss the latest trends in technology. Here’s a brief overview of the various <br>
+                           tech topics we cover:</p>
+                        
+                        
+    </div>
+        <div class="content1">
+                    <img src="/images/tech hub1.jpg" width="80%" height="400px">
+        </div>
+
+        
+        <div class="categories">
+            <div class="parent">
+                <div class="child bg-one"></div>
+            </div>
+        
+            <div class="parent">
+                <div class="child bg-two"></div>
+            </div>
+        
+            <div class="parent">
+                <div class="child bg-three"></div>
+            </div>
+        
+            <div class="parent">
+                <div class="child bg-four"></div>
+            </div>
+        
+            <div class="parent">
+                <div class="child bg-five"></div>
+            </div>
+        
+            <div class="parent">
+                <div class="child bg-six"></div>
+            </div>
+        
+            <div class="parent">
+                <div class="child bg-seven"></div>
+            </div>
+        
+            <div class="parent">
+                <div class="child bg-eight"></div>
+            </div>
+        
+            <div class="parent">
+                <div class="child bg-nine"></div>
+            </div>
+        
+            <div class="parent">
+                <div class="child bg-ten"></div>
+            </div>
+        </div>
+
+        <div class="images">
+            <div class="images1">
+              <img src="/images/tec hub15.jpg" height="300px" width="300px">
+        <div class="images2">
+              <li>AI and Machine Learning Dive into the world of artificial intelligence <br>
+                and machine learning. Discuss the latest  advancements, share research<br>
+                 papers, and explore practical applications of AI in different<br>
+                  industries. Topics include:</li>
+         </div>
+            </div>
+       </div>
+
+       <div class="cont">
+        <div class="sup">
+           <img src="/images/tech hub 3.avif" height="230px" width="230px" style="border-radius:50%;">
+           
+            <h1> Data Science and Analytics</h1><br><br>
+
+               <h3>>>> Explore the field of data science and <br>
+                analytics From data visualization tools to <br>
+                 data technologies, </h3>
+                </h3>
+        </div>
+
+        <div class="sup1">
+            <img src="/images/tech hub8.avif" height="230px" width="230px" style="border-radius:50%;">
+            
+             <h1>  Software Developmen</h1><br><br>
+ 
+                <h3>>>> Connect with fellow developers to <br>
+                    discuss programming languages, <br>
+                    frameworks, best practices.  </h3>
+                 </h3>
+         </div>
+
+         <div class="sup2">
+            <img src="/images/tech hub4.avif" height="230px" width="230px" style="border-radius:50%;">
+            
+             <h1>  Hardware and Gadgets </h1><br><br>
+ 
+                <h3>>>> Talk about the latest hardware, from <br>
+                    cutting-edge laptops to innovative smart<br>
+                     home devices. Share reviews, ask for </h3>
+                 </h3>
+         </div>
+        </div>
+        <div class="cont1">
+         <div class="sup3">
+            <img src="/images/tech hub6.avif" height="230px" width="230px" style="border-radius:50%;">
+            
+             <h1>Tech Support and Troubleshooting
+            </h1><br><br>
+ 
+                <h3>>>> Get help with your tech issues from our<br>
+                     community. Whether it’s a software bug,<br>
+                      hardware failure, or network problem, </h3>
+         </div>
+
+         <div class="sup4">
+            <img src="/images/tech hub7.webp" height="230px" width="230px" style="border-radius:50%;">
+            
+             <h1>Emerging Technologies  </h1><br><br>
+ 
+                <h3>>>> Stay ahead of the curve by discussing <br>
+                        technologies that are shaping the future<br>
+                         Fromblockchain to quantum computing, </h3>    
+         </div>
+
+         <div class="sup5">
+            <img src="/images/tech hub10.avif" height="230px" width="230px" style="border-radius:50%;">
+            
+             <h1> Product Reviews and Recommendations
+            </h1><br><br>
+ 
+                <h3>>>> Share your experiences with different<br>
+                     tech products and seek recommendations<br>
+                      from the community. Compare features</h3>    
+         </div>
+        </div>
+
+        <div class="loading">
+            <h1 style="color:rgb(40, 20, 59);">* This is tech hub images</h1>
+            <div class="loader">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+           
+          </div>
+
+          <div class="footer">
+            <div class="footer1">
+                <img src="./images/logo.jpg" height="80px" width="180px"> <br><br>
+                <p style="font-size: 20px;">We are here to help you.</p>
+                <div class="icons">
+                   <a><i class="fa-brands fa-facebook-f"></i></a>
+                    <a><i class="fa-brands fa-square-instagram"></i></a>
+                    <a><i class="fa-brands fa-linkedin"></i></a>
+                    <a> <i class="fa-brands fa-x-twitter"></i></a>
+                    
+                </div>
+            </div>
+            <div class="footer2">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutUs.html">About</a></li>
+                <li><a href="newsPage.html">News</a></li>
+                <li><a href="Review.html">Reviews</a></li>
+                <li><a href="tutorial.html">Tutorials</a></li>
+               
+            </div>
+            <div class="footer3">
+                <li><a href="ProductComparision.html">Product Comparisions</a></li>
+                <li><a href="contactUs.html">Contact</a></li>
+                <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+                <li><a href="Communityform.html">Community Forum</a></li>
+                <li><a href="termsConditions.html">Terms of Services</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+        
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

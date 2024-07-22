@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>earpods</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+         .navbar {
+    background-image: url(../images/nav-footer-bg-img.jpg);
+    height: 120px;
+    width: 100%;
+    background-color: rgb(221, 217, 217);
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(24, 23, 23);
+    position: absolute;
+    top: 0;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.nav {
+    margin-left: 200px;
+    margin-right: 20px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    column-gap: 50px;
+}
+
+.nav ul li {
+    position: relative;
+}
+
+
+
+
+.nav ul li a {
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav ul li a:hover {
+    color: orangered;
+}
+
+.nav ul li a .fa-solid {
+    margin-left: 4px;
+    transition: transform 0.5s ease;
+}
+
+.nav ul li:hover > a .fa-solid {
+    transform: rotate(180deg);
+}
+
+.nav ul li .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    text-align: center;
+    background-image: url(../images/nav-footer-bg-img.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    padding: 10px;
+    width: 150px;
+}
+
+.nav ul li:hover .sub-menu {
+    display: block;
+    animation: fadeInUp 0. ease-in-out;
+}
+
+
+
+.sub-menu li {
+    margin-top: 10px;
+    border-bottom: rgb(247, 242, 242) 0.5px solid;
+}
+
+.sub-menu li a {
+    color: black;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.sub-menu li a:hover {
+    color: orangered;
+}
+
+.nav ul li input[type="text"] {
+    padding: 7px;
+    position: absolute;
+    border-radius: 10px;
+    border: none;
+}
+
+.footer{
+    background-image: url(../images/nav-footer-bg-img.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    width: 100%;
+    border: black solid 1px;
+    margin-top: 150px;
+    padding-left: 50px;
+    display:flex;
+    column-gap: 250px;
+    padding-top: 50px;
+    color: white;
+
+}
+.footer li{
+    list-style: none;
+    margin-top: 22px;
+    font-size: 22px;
+}
+.footer li a{
+    text-decoration: none;
+    color:white;
+    
+}
+.footer li a:hover{
+    color: orangered;
+}
+.icons i{
+    margin-top: 10px;
+padding: 5px;
+    
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="navbar">
+            <div class="logo">
+                <img src="/images/tech hub29.jpg" style="border-radius: 50%;" height="120px" width="150px">
+
+            </div>
+            <div class="nav">
+                <ul class="links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="aboutUs.html">About</a></li>
+                  <li><a href="Tech hub+.html">Trending <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="sub-menu">
+                    <li><a href="newsPage.html">News</a></li>
+                    <li><a href="Review.html">Reviews</a></li>
+                    <li><a href="tutorial.html">Tutorials</a></li>
+
+                </ul>
+            </li>
+            
+                    <li><a href="contactUs.html">Contact Us <i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="sub-menu" style="width: 250px;">
+                        <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+                        <li><a href="Communityform.html">Community Forum</a></li>
+                        <li><a href="termsConditions.html">Terms of Services</a></li>
+    
+                    </ul>
+                    </li>
+                      <li><a href="login form.html">Sign in</a></li>   
+                                  </ul>
+            </div>
+        </div>
+
+
+
+
+        <div class="gadgets">
+            <h1 style="font-size: 55px;margin-left: 150px ;margin-top: 150px;">Motorola Razr 50 Ultra review: Familiar yet different
+            </h1>
+            <p style="font-size: 20px;margin-left: 150px;  color: grey; font-family: 'Courier New', Courier, monospace;">
+             Motorola’s new Razr 50 Ultra is a fun, folding flip smartphone that puts focus on coolness.</p>
+            <div class="star" style="margin-left: 150px;">
+            <i class="fa-solid fa-star" style="color: rgb(179, 45, 45); font-size: 20px; "></i>
+            <i class="fa-solid fa-star" style="color: rgb(179, 45, 45); font-size: 20px;"></i>
+            <i class="fa-solid fa-star" style="color: rgb(179, 45, 45); font-size: 20px;"></i>
+            <i class="fa-solid fa-star" style="color: rgb(179, 45, 45); font-size: 20px;"></i>
+            <i class="fa-sharp fa-regular fa-star" style="font-size: 20px; color:rgb(179, 45, 45) ;"></i>
+            <ion-icon name="chevron-down-outline"></ion-icon>
+            <p style="margin-left: 180px; margin-top: -26px; font-size: 20px;">Rs. 99,999</p>
+            <hr>
+
+           </div>
+           
+            <img src="images/gadgetimg5.avif" alt="" style="margin-left: 180px; height: 400px;width: 800px; margin-top: 40px;"> <hr>
+            <blockquote style="font-size: 20px;">For years, I have struggled to adapt to foldable phones as a consumer. Honestly, I tried to ignore the familiar flaws I found with every new foldable phone, yet I was never able to give up my iPhone at any point in time. However, using the new Motorola Razr 50 Ultra (sold as Razr Plus in the US) felt different, and I felt more confident handling a foldable phone in my day-to-day life.</blockquote>
+        
+            <blockquote style="font-size: 20px;"  >t’s a nice change, and my admission may be a sign that foldable smartphones can be relied upon despite the ifs and buts they come with like any other new product category. But the question remains: is it worth investing in something like a Motorola Razr foldable phone over a standard smartphone? Yes and no; it depends on a lot of factors. Here is my review of the Motorola Razr 50 Ultra. </blockquote>
+        
+
+         <blockquote style="font-size: 20px;">Motorola Razr 50 Ultra price in India (as reviewed): Rs 99,999
+            Stylish and pocketable, too</blockquote>
+
+         <img src="images/watch2img.webp" alt="" style="height: 400px; width: 800px; margin-left: 180px;">
+         <p style="margin-left:170px;">I love using the Razr 50 Ultra as an old-school handycam.(Image credit: Anuj Bhatia/The Indian Express)</p><hr>
+
+
+         <blockquote>Motorola has heavily emphasised style and chicness with the new Razr, and I’m not surprised. The new design looks slick. I was a big fan of the original Razr when it came out in the 2000s, and the device still surprises me with the way it feels and looks. The new Razr is an extension of the OG Razr, adapted to modern settings. I like the edges, how it feels in the hand, the softness of the vegan back cover, and the colours it is available in.</blockquote>
+          <h2 style="margin-top: 50px; margin-left: 180px; color: blueviolet;">The grown-up cover screen</h2>
+          <img src="images/motoimg3.webp" alt="" style="height: 400px; width:600px;margin-left: 180px;"> <hr>
+          <blockquote style="margin-left: 200px; ">The 4-inch cover display is sharp and has a 165Hz refresh rate. (Image credit: Anuj Bhatia/The Indian Express)</blockquote>
+        </div>
+    <a href="comment.html"><button style="margin-left: 400px; height:60px; width:200px; margin-top: 40px; background-color: #1a2835; color: white; text-transform: uppercase;" >Comment Here</button></a>
+    </div>
+ <div class="footer">
+            <div class="footer1">
+                <img src="./images/logo.jpg" height="80px" width="180px"> <br><br>
+                <p style="font-size: 20px;">We are here to help you.</p>
+                <div class="icons">
+                   <a><i class="fa-brands fa-facebook-f"></i></a>
+                    <a><i class="fa-brands fa-square-instagram"></i></a>
+                    <a><i class="fa-brands fa-linkedin"></i></a>
+                    <a> <i class="fa-brands fa-x-twitter"></i></a>
+                    
+                </div>
+            </div>
+
+
+            <div class="footer2">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutUs.html">About</a></li>
+                <li><a href="newsPage.html">News</a></li>
+                <li><a href="Review.html">Reviews</a></li>
+                <li><a href="tutorial.html">Tutorials</a></li>
+               
+            </div>
+            <div class="footer3">
+                <li><a href="ProductComparision.html">Product Comparisions</a></li>
+                <li><a href="contactUs.html">Contact</a></li>
+                <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+                <li><a href="Communityform.html">Community Forum</a></li>
+                <li><a href="termsConditions.html">Terms of Services</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+        
+            </div>
+     </div>
+
+    
+    <script src="https://kit.fontawesome.com/69ea0b33a9.js" crossorigin="anonymous"></script>
+</body>
+</html>

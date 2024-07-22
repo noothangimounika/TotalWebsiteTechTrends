@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>earpods</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'poppins', sans-serif;
+            box-sizing: border-box;
+        }
+         .navbar {
+    background-image: url(../images/nav-footer-bg-img.jpg);
+    height: 120px;
+    width: 100%;
+    background-color: rgb(221, 217, 217);
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(24, 23, 23);
+    position: absolute;
+    top: 0;
+    animation: fadeInDown 1s ease-in-out;   
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.nav {
+    margin-left: 200px;
+    margin-right: 20px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    column-gap: 50px;
+}
+
+.nav ul li {
+    position: relative;
+}
+
+
+
+
+.nav ul li a {
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav ul li a:hover {
+    color: orangered;
+}
+
+.nav ul li a .fa-solid {
+    margin-left: 4px;
+    transition: transform 0.5s ease;
+}
+
+.nav ul li:hover > a .fa-solid {
+    transform: rotate(180deg);
+}
+
+.nav ul li .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    text-align: center;
+    background-image: url(../images/nav-footer-bg-img.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    padding: 10px;
+    width: 150px;
+}
+
+.nav ul li:hover .sub-menu {
+    display: block;
+    animation: fadeInUp 0. ease-in-out;
+}
+
+
+
+.sub-menu li {
+    margin-top: 10px;
+    border-bottom: rgb(247, 242, 242) 0.5px solid;
+}
+
+.sub-menu li a {
+    color: black;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.sub-menu li a:hover {
+    color: orangered;
+}
+
+.nav ul li input[type="text"] {
+    padding: 7px;
+    position: absolute;
+    border-radius: 10px;
+    border: none;
+}
+
+.footer{
+    background-image: url(../images/nav-footer-bg-img.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    width: 100%;
+    border: black solid 1px;
+    margin-top: 150px;
+    padding-left: 50px;
+    display:flex;
+    column-gap: 250px;
+    padding-top: 50px;
+    color: white;
+
+}
+.footer li{
+    list-style: none;
+    margin-top: 22px;
+    font-size: 22px;
+}
+.footer li a{
+    text-decoration: none;
+    color:white;
+    
+}
+.footer li a:hover{
+    color: orangered;
+}
+.icons i{
+    margin-top: 10px;
+padding: 5px;
+    
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="navbar">
+            <div class="logo">
+                <img src="/images/tech hub29.jpg" style="border-radius: 50%;" height="120px" width="150px">
+
+            </div>
+            <div class="nav">
+                <ul class="links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="aboutUs.html">About</a></li>
+                  <li><a href="Tech hub+.html">Trending <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="sub-menu">
+                    <li><a href="newsPage.html">News</a></li>
+                    <li><a href="Review.html">Reviews</a></li>
+                    <li><a href="tutorial.html">Tutorials</a></li>
+
+                </ul>
+            </li>
+            
+                    <li><a href="contactUs.html">Contact Us <i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="sub-menu" style="width: 250px;">
+                        <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+                        <li><a href="Communityform.html">Community Forum</a></li>
+                        <li><a href="termsConditions.html">Terms of Services</a></li>
+    
+                    </ul>
+                    </li>
+                      <li><a href="login form.html">Sign in</a></li>   
+                                  </ul>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="gadgets">
+            <h1 style="font-size: 55px;margin-left: 150px ;margin-top: 150px;">Sennheiser’s earphones specially crafted <br> for the gym will up your treadmill game
+            </h1>
+            <p style="font-size: 20px;margin-left: 150px;  color: grey; font-family: 'Courier New', Courier, monospace;">The Sennheiser Momentum Sport is a unique truly wireless earphone designed for the gym-goers who prioritise fitness tracking and situational awareness alongside great sound.</p>
+            <div class="star" style="margin-left: 150px;">
+            <i class="fa-solid fa-star" style="color: rgb(179, 45, 45); font-size: 20px; "></i>
+            <i class="fa-solid fa-star" style="color: rgb(179, 45, 45); font-size: 20px;"></i>
+            <i class="fa-solid fa-star" style="color: rgb(179, 45, 45); font-size: 20px;"></i>
+            <i class="fa-solid fa-star" style="color: rgb(179, 45, 45); font-size: 20px;"></i>
+            <i class="fa-sharp fa-regular fa-star" style="font-size: 20px; color:rgb(179, 45, 45) ;"></i>
+            <ion-icon name="chevron-down-outline"></ion-icon>
+            <p style="margin-left: 180px; margin-top: -26px; font-size: 20px;">Rs. 27,990</p>
+            <hr>
+
+           </div>
+           
+            <img src="images/gadgetimg3.webp" alt="" style="margin-left: 250px; height: 400px;width: 600px; margin-top: 40px; border-radius: 200px;"> <hr>
+            <blockquote style="font-size: 20px;">Are there a pair of perfect wireless earphones for the gym? Well, Sennheiser seems to think so and its Sennheiser Momentum Sport wants to stand out in the gym by offering more than audio awesomeness.</blockquote>
+        
+            <blockquote style="font-size: 20px;"  >The Sennheiser Momentum Sport is a different truly wireless earphone, in many ways than one. To start with, the design is unique, both for the earpieces as well as the charging case. The charging case is larger than usual and has a rubber finish which suggests clearly that it wants to be used in sweaty conditions or near the pool.  </blockquote>
+        
+            <img src="images/earpod1.webp" alt="" style="height: 400px; width: 500px; margin-left: 300px; border-radius: 50%;">
+         <blockquote style="font-size: 20px;">The earpieces are different in their shape and size. It is not exactly larger than the largest ones I have used, but its teardrop-like shape makes it feel so for sure. Because of this, it also comes with fins that need to be looped in to keep the earpieces in place when you are on the treadmill or like me treading the local roads in the humid Delhi climate. </blockquote>
+         
+         <p style="margin-left:170px;"></p><hr>
+
+         <a href="comment.html"><button style="margin-left: 480px; height:60px; width:200px; margin-top: 40px; background-color: #1a2835; color: white; text-transform: uppercase;" >Comment Here</button></a>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="footer1">
+            <img src="./images/logo.jpg" height="80px" width="180px"> <br><br>
+            <p style="font-size: 20px;">We are here to help you.</p>
+            <div class="icons">
+               <a><i class="fa-brands fa-facebook-f"></i></a>
+                <a><i class="fa-brands fa-square-instagram"></i></a>
+                <a><i class="fa-brands fa-linkedin"></i></a>
+                <a> <i class="fa-brands fa-x-twitter"></i></a>
+                
+            </div>
+        </div>
+        <div class="footer2">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="aboutUs.html">About</a></li>
+            <li><a href="newsPage.html">News</a></li>
+            <li><a href="Review.html">Reviews</a></li>
+            <li><a href="tutorial.html">Tutorials</a></li>
+           
+        </div>
+        <div class="footer3">
+            <li><a href="ProductComparision.html">Product Comparisions</a></li>
+            <li><a href="contactUs.html">Contact</a></li>
+            <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+            <li><a href="Communityform.html">Community Forum</a></li>
+            <li><a href="termsConditions.html">Terms of Services</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+    
+        </div>
+    </div>
+ </div>
+    <script src="https://kit.fontawesome.com/69ea0b33a9.js" crossorigin="anonymous"></script>
+</body>
+</html>
